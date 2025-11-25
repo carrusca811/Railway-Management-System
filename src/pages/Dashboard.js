@@ -13,6 +13,7 @@ const Dashboard = () => (
     <Helmet>
       <title>Dashboard</title>
     </Helmet>
+
     <Box
       sx={{
         backgroundColor: 'background.default',
@@ -38,83 +39,74 @@ const Dashboard = () => (
               ].join(','),
             }}
           >
-            Welome to Sri Lanka Railways
+            Welcome to Porto Railways
           </Typography>
+
           <br />
-          {/* <img src="/static/cover.jpg" alt="error" width="100%" /> */}
           <Carousel />
         </Box>
+
         <br />
+
         <Box
           sx={{
             backgroundColor: 'background.default',
             minHeight: '100%',
-            py: 3
+            py: 3,
           }}
         >
           <Container maxWidth={false}>
-            <Grid
-              container
-              spacing={3}
-            >
-              <Grid
-                item
-                lg={2.4}
-                sm={4.4}
-                xl={2.4}
-                xs={8.4}
-              >
-                <a href="/app/railwayStations">
+            <Grid container spacing={3}>
+
+              <Grid item lg={2.4} sm={4.4} xl={2.4} xs={8.4}>
+                <a
+                  href="/app/railwayStations"
+                  aria-label="Open Railway Stations page"
+                >
                   <RailwayStation />
                 </a>
               </Grid>
-              <Grid
-                item
-                lg={2.4}
-                sm={4.4}
-                xl={2.4}
-                xs={8.4}
-              >
-                <a href="/app/trainSchedule">
+
+              <Grid item lg={2.4} sm={4.4} xl={2.4} xs={8.4}>
+                <a
+                  href="/app/trainSchedule"
+                  aria-label="Open Train Schedule page"
+                >
                   <TrainSchedule />
                 </a>
               </Grid>
-              <Grid
-                item
-                lg={2.4}
-                sm={4.4}
-                xl={2.4}
-                xs={8.4}
-              >
-                <a href="/app/trainDelays">
+
+              <Grid item lg={2.4} sm={4.4} xl={2.4} xs={8.4}>
+                <a
+                  href="/app/trainDelays"
+                  aria-label="Open Train Delays page"
+                >
                   <TrainDelay />
                 </a>
               </Grid>
-              <Grid
-                item
-                lg={2.4}
-                sm={4.4}
-                xl={2.4}
-                xs={8.4}
-              >
-                <a href="/app/trainCancellations">
+
+              <Grid item lg={2.4} sm={4.4} xl={2.4} xs={8.4}>
+                <a
+                  href="/app/trainCancellations"
+                  aria-label="Open Train Cancellations page"
+                >
                   <TrainCancel />
                 </a>
               </Grid>
-              <Grid
-                item
-                lg={2.4}
-                sm={4.4}
-                xl={2.4}
-                xs={8.3}
-              >
-                <a href="/app/ticketReservation">
+
+              <Grid item lg={2.4} sm={4.4} xl={2.4} xs={8.3}>
+                <a
+                  href="/app/ticketReservation"
+                  aria-label="Open Ticket Reservation page"
+                >
                   <TicketReservation />
                 </a>
               </Grid>
+
             </Grid>
           </Container>
         </Box>
+
       </Container>
     </Box>
   </>

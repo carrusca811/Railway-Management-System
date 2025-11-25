@@ -1,8 +1,8 @@
 const Logo = (props) => (
   <img
     alt="Logo"
-    src="/static/slr_logo.png"
-    height="60px"
+    src="/static/srl_logo.png"
+    height="60"
     {...props}
   />
 );

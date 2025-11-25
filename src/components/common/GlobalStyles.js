@@ -15,7 +15,7 @@ const useStyles = makeStyles(() => createStyles({
       width: '100%'
     },
     body: {
-      backgroundColor: '#f4f6f8',
+      backgroundColor: '#ffffff',
       height: '100%',
       width: '100%'
     },

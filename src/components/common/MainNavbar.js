@@ -5,10 +5,22 @@ import Logo from './Logo';
 const MainNavbar = (props) => (
   <AppBar
     elevation={0}
+    style={{
+      backgroundColor: '#ffffff',
+      color: '#000000',
+      boxShadow: 'none'
+    }}
     {...props}
   >
-    <Toolbar sx={{ height: 64 }}>
-      <RouterLink to="/">
+    <Toolbar
+      style={{
+        height: 64,
+        display: 'flex',
+        alignItems: 'center',
+        paddingLeft: 16,
+      }}
+    >
+      <RouterLink to="/" style={{ textDecoration: 'none' }}>
         <Logo />
       </RouterLink>
     </Toolbar>
